@@ -2,3 +2,24 @@
 ![Badge Kubernetes](http://img.shields.io/static/v1?label=ARQUITETURA_HEXAGONAL&message=go1.16.15&color=blue&style=for-the-badge)
 ![Badge FullCycle](http://img.shields.io/static/v1?label=FULLCYCLE&message=3.0&color=orange&style=for-the-badge)
 ![Badge PDI](http://img.shields.io/static/v1?label=PDI&message=LOGCOMEX&color=purple&style=for-the-badge)
+
+
+### Subindo Docker
+```
+docker compose up -d
+```
+
+### Ingressando no container
+```
+docker exec -it appproduct bash
+```
+
+### Instalando dependências
+1. Ingressar no container
+2. Executar ```go mod tidy```
+
+### Executando testes unitários (dentro do container)
+```
+go test // for all tests
+go test -run TestProductService_Get // or run a specific test
+```
