@@ -17,7 +17,7 @@ type ProductInterface interface {
 	Disable() error
 	GetID() string
 	GetName() string
-	GetState() string
+	GetStatus() string
 	GetPrice() float64
 }
 
