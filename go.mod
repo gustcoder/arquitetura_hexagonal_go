@@ -1,4 +1,4 @@
-module github.com/codeedu/go-hexagonal
+module github.com/gustcoder/arquitetura_hexagonal_go
 
 go 1.19
 

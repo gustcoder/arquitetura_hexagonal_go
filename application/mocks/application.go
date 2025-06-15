@@ -7,7 +7,7 @@ package mock_application
 import (
 	reflect "reflect"
 
-	application "github.com/codeedu/go-hexagonal/application"
+	application "github.com/gustcoder/arquitetura_hexagonal_go/application"
 	gomock "github.com/golang/mock/gomock"
 )
 
