@@ -40,3 +40,27 @@ Para sair do terminal
 ```
 .exit ou .quit
 ```
+
+###Webserver
+Subindo o servidor
+```
+go run main.go http
+```
+
+Teste Postman
+```
+curl --location 'http://localhost:9000/product' \
+--header 'Content-Type: application/json' \
+--data '{
+    "name": "Teste Postman",
+    "price": 100.00
+}'
+```
+
+Exemplo de logs do Negroni
+```
+[negroni] 2025-06-22T22:12:10Z | 200 |   9.438723ms | localhost:9000 | POST /product
+[negroni] 2025-06-22T22:13:40Z | 500 |   122.543µs | localhost:9000 | POST /product
+```
+
+
