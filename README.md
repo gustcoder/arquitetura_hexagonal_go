@@ -23,3 +23,20 @@ docker exec -it appproduct bash
 go test // for all tests
 go test -run TestProductService_Get // or run a specific test
 ```
+
+### Cobra CLI
+```
+cobra-cli init
+cobra-cli add command
+```
+
+### SQLITE
+Para conectar em uma base
+```
+sqlite3 "nome do banco"
+```
+
+Para sair do terminal
+```
+.exit ou .quit
+```
