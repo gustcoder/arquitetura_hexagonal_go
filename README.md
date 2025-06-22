@@ -27,7 +27,7 @@ go test -run TestProductService_Get // or run a specific test
 ### Cobra CLI
 ```
 cobra-cli init
-cobra-cli add command
+cobra-cli add "nome do cli"
 ```
 
 ### SQLITE
